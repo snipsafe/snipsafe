@@ -29,5 +29,13 @@
     "concurrently": "^8.2.0",
     "nodemon": "^3.0.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snipsafe/snipsafe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/snipsafe/snipsafe/issues"
+  },
+  "homepage": "https://github.com/snipsafe/snipsafe#readme"
 }

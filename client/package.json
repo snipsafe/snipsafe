@@ -37,5 +37,13 @@
     ]
   },
   "proxy": "http://localhost:5000",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snipsafe/snipsafe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/snipsafe/snipsafe/issues"
+  },
+  "homepage": "https://github.com/snipsafe/snipsafe#readme",
   "license": "MIT"
 }

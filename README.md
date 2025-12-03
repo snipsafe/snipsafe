@@ -77,7 +77,7 @@ SnipSafe includes comprehensive API documentation powered by Swagger/OpenAPI 3.0
 1. Clone the repository:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/snipsafe/snipsafe.git
 cd SnipSafe
 ```
 
@@ -722,33 +722,25 @@ curl -X POST http://localhost:5000/api/snippets \
 
 > **💡 Tip**: Visit `/api-docs` for interactive examples and code generation in multiple languages!
 
-## Docker Commands
+## Contributing
 
-### Simple Commands
+We welcome contributions! Please see our [Contributing Guide](https://github.com/snipsafe/snipsafe/blob/main/CONTRIBUTING.md) for details.
 
-```bash
-# Start everything
-docker-compose up -d --build
+### Development Setup
 
-# View logs
-docker-compose logs -f
+1. Fork the repository on [GitHub](https://github.com/snipsafe/snipsafe)
+2. Clone your fork locally
+3. Follow the installation steps above
+4. Create a feature branch
+5. Make your changes
+6. Submit a pull request
 
-# Stop everything
-docker-compose down
+### Reporting Issues
 
-# Stop and remove data
-docker-compose down -v
-```
+Please report bugs and feature requests on our [GitHub Issues](https://github.com/snipsafe/snipsafe/issues) page.
 
-### Maintenance
+## Community
 
-```bash
-# View status
-docker-compose ps
-
-# Restart app only
-docker-compose restart snipsafe-app
-
-# Update and restart
-docker-compose pull && docker-compose up -d --build
-```
+- **GitHub**: [https://github.com/snipsafe/snipsafe](https://github.com/snipsafe/snipsafe)
+- **Issues**: [https://github.com/snipsafe/snipsafe/issues](https://github.com/snipsafe/snipsafe/issues)
+- **Discussions**: [https://github.com/snipsafe/snipsafe/discussions](https://github.com/snipsafe/snipsafe/discussions)
