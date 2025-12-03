@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnipSafe - Private Code Snippet Sharing Platform</title>
+    <meta name="description" content="A secure, on-premises code snippet sharing platform for organizations. Share code safely within your team with advanced permissions and real-time collaboration.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">🔐</div>
+                <span class="logo-text">SnipSafe</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#security">Security</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#docs">Docs</a>
+                <a href="#demo" class="cta-button">Live Demo</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span>Self-hosted • Secure • Private</span>
+                </div>
+                <h1 class="hero-title">
+                    Secure Code Sharing
+                    <span class="gradient-text">Within Your Organization</span>
+                </h1>
+                <p class="hero-subtitle">
+                    SnipSafe is a private, on-premises code snippet sharing platform designed for organizations 
+                    who prioritize security and control. Share code safely within your team with advanced 
+                    permissions, real-time collaboration, and enterprise-grade security.
+                </p>
+                <div class="hero-actions">
+                    <a href="#demo" class="btn btn-primary">
+                        <span>Try Live Demo</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/yourusername/snipsafe" class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd" />
+                        </svg>
+                        <span>View on GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="code-title">React Component</div>
+                        <div class="code-actions">
+                            <span class="viewers">👤 3 viewing</span>
+                            <button class="share-btn">Share</button>
+                        </div>
+                    </div>
+                    <div class="code-content">
+                        <pre><code><span class="keyword">import</span> <span class="variable">React</span> <span class="keyword">from</span> <span class="string">'react'</span>;
+
+<span class="keyword">const</span> <span class="function">UserCard</span> = <span class="params">({ user })</span> => {
+  <span class="keyword">return</span> (
+    <span class="tag">&lt;div</span> <span class="attr">className</span>=<span class="string">"user-card"</span><span class="tag">&gt;</span>
+      <span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="string">{user.avatar}</span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;h3&gt;</span><span class="string">{user.name}</span><span class="tag">&lt;/h3&gt;</span>
+      <span class="tag">&lt;p&gt;</span><span class="string">{user.role}</span><span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+  );
+};
+
+<span class="keyword">export</span> <span class="keyword">default</span> <span class="variable">UserCard</span>;</code></pre>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-card security">
+                        <div class="card-icon">🛡️</div>
+                        <div class="card-text">Enterprise Security</div>
+                    </div>
+                    <div class="floating-card collaboration">
+                        <div class="card-icon">👥</div>
+                        <div class="card-text">Real-time Collaboration</div>
+                    </div>
+                    <div class="floating-card languages">
+                        <div class="card-icon">💻</div>
+                        <div class="card-text">18+ Languages</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Everything you need for secure code sharing</h2>
+                <p>Built for organizations that prioritize security, privacy, and collaboration</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Private & Secure</h3>
+                    <p>Self-hosted solution with organization-based access control. Your code stays on your servers.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Team Collaboration</h3>
+                    <p>Share snippets with specific team members, see who's viewing in real-time, and collaborate effectively.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Syntax Highlighting</h3>
+                    <p>Beautiful syntax highlighting for 18+ programming languages with automatic language detection.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Powerful Search</h3>
+                    <p>Full-text search across all snippets with advanced filters by language, tags, and author.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Smart Features</h3>
+                    <p>Auto-generated titles, paste from clipboard, code templates, and intelligent suggestions.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h3>Enterprise Ready</h3>
+                    <p>Azure AD integration, admin controls, API documentation, and role-based permissions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="security">
+        <div class="container">
+            <div class="security-content">
+                <div class="security-text">
+                    <div class="section-badge">🛡️ Security First</div>
+                    <h2>Built for Enterprise Security</h2>
+                    <p>SnipSafe is designed with security as the top priority. Deploy on your own infrastructure and maintain complete control over your code snippets.</p>
+                    
+                    <div class="security-features">
+                        <div class="security-feature">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <h4>Self-Hosted Deployment</h4>
+                                <p>Your code never leaves your infrastructure</p>
+                            </div>
+                        </div>
+                        <div class="security-feature">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <h4>Azure AD Integration</h4>
+                                <p>Seamless SSO with your existing identity provider</p>
+                            </div>
+                        </div>
+                        <div class="security-feature">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <h4>Granular Permissions</h4>
+                                <p>Control access at user and organization level</p>
+                            </div>
+                        </div>
+                        <div class="security-feature">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <h4>Audit Trails</h4>
+                                <p>Track all access and modifications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="security-visual">
+                    <div class="security-diagram">
+                        <div class="security-layer">
+                            <div class="layer-label">Your Infrastructure</div>
+                            <div class="layer-content">
+                                <div class="security-node">SnipSafe App</div>
+                                <div class="security-node">MongoDB</div>
+                                <div class="security-node">Azure AD</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>100% Free & Open Source</h2>
+                <p>Deploy SnipSafe on your own infrastructure at no cost. Forever.</p>
+            </div>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Always Free</div>
+                    <div class="pricing-header">
+                        <h3>SnipSafe</h3>
+                        <div class="price">
+                            <span class="amount">Free</span>
+                            <span class="period">forever</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">✓ Complete source code access</div>
+                        <div class="feature">✓ Self-hosted deployment</div>
+                        <div class="feature">✓ Unlimited users & snippets</div>
+                        <div class="feature">✓ All enterprise features</div>
+                        <div class="feature">✓ Real-time collaboration</div>
+                        <div class="feature">✓ Azure AD integration</div>
+                        <div class="feature">✓ MIT License - modify freely</div>
+                        <div class="feature">✓ Community support</div>
+                        <div class="feature">✓ Regular updates & improvements</div>
+                    </div>
+                    <a href="https://github.com/yourusername/snipsafe" class="btn btn-primary">Download & Deploy Now</a>
+                </div>
+            </div>
+            
+            <div class="pricing-note">
+                <p>💡 <strong>Completely Open Source:</strong> SnipSafe is released under the MIT License. Download the source code, deploy on your infrastructure, customize it to your needs, and use it forever - completely free. No hidden costs, no licensing fees, no restrictions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to deploy your own secure code sharing platform?</h2>
+                <p>Download SnipSafe now and have it running in your infrastructure within minutes. Zero cost, maximum control.</p>
+                <div class="cta-actions">
+                    <a href="https://github.com/yourusername/snipsafe" class="btn btn-primary btn-large">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        Download Free
+                    </a>
+                    <a href="#demo" class="btn btn-outline btn-large">Try Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🔐</div>
+                        <span class="logo-text">SnipSafe</span>
+                    </div>
+                    <p>Secure code snippet sharing for modern organizations.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#security">Security</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="/api-docs">API Docs</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="https://github.com/yourusername/snipsafe">GitHub</a>
+                    <a href="https://github.com/yourusername/snipsafe/issues">Issues</a>
+                    <a href="https://github.com/yourusername/snipsafe/discussions">Discussions</a>
+                    <a href="#docs">Documentation</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#contact">Contact</a>
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                    <a href="#support">Support</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SnipSafe. Released under the MIT License.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/yourusername/snipsafe" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

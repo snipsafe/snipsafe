@@ -1,0 +1,77 @@
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: snipsafe-mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: your_admin
+      MONGO_INITDB_ROOT_PASSWORD: your_password123
+      MONGO_INITDB_DATABASE: your_snipsafe
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - snipsafe-network
+
+  snipsafe-app:
+    build: .
+    container_name: snipsafe-app
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      # ===========================================
+      # REQUIRED CONFIGURATION
+      # ===========================================
+      NODE_ENV: production
+      PORT: 5000
+      MONGODB_URI: mongodb://admin:password123@mongodb:27017/snipsafe?authSource=admin
+      JWT_SECRET: your-super-secret-jwt-key-change-this-in-production
+      
+      # ===========================================
+      # APPLICATION CONFIGURATION
+      # ===========================================
+      CLIENT_URL: http://localhost:5000
+      DEFAULT_ORGANIZATION: modak
+      
+      # ===========================================
+      # AUTHENTICATION CONFIGURATION
+      # ===========================================
+      # Authentication Mode: 'local' or 'azure_ad'
+      AUTH_MODE: azure_ad
+      
+      # ===========================================
+      # AZURE AD CONFIGURATION (Optional)
+      # Uncomment and configure if AUTH_MODE=azure_ad
+      # ===========================================
+      AZURE_AD_CLIENT_ID: ""
+      AZURE_AD_CLIENT_SECRET: ""
+      AZURE_AD_TENANT_ID: ""
+            
+      # NODE_ENV: development  # Use for development mode
+      # DEBUG: snipsafe:*      # Enable debug logging
+      
+      # ===========================================
+      # SECURITY OPTIONS (Optional)
+      # ===========================================
+      # TRUST_PROXY: 1                    # Enable if behind reverse proxy
+      # RATE_LIMIT_MAX: 100               # Max requests per window
+      # RATE_LIMIT_WINDOW_MS: 900000      # Rate limit window (15 min)
+      
+      # ===========================================
+      # CORS CONFIGURATION (Optional)
+      # ===========================================
+      # CORS_ORIGIN: https://yourdomain.com  # Specific CORS origin
+      
+    depends_on:
+      - mongodb
+    networks:
+      - snipsafe-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  snipsafe-network:
+    driver: bridge
